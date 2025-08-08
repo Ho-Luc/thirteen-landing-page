@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirteen - Bible Reading Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #4287f5 0%, #28a745 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #4287f5;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        .features {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 10px;
+            background: #f8f9fa;
+            transition: transform 0.2s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #4287f5;
+        }
+        
+        .verse {
+            background: #e3f2fd;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .verse-text {
+            font-size: 1.4rem;
+            font-style: italic;
+            color: #1976d2;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+        }
+        
+        .verse-reference {
+            font-size: 1.1rem;
+            color: #1565c0;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .coming-soon {
+            background: #ffc107;
+            color: #212529;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .features h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="coming-soon">📱 Coming Soon to App Stores</div>
+        <h1>Thirteen</h1>
+        <p>Build daily Bible reading habits together. Create or join reading groups and encourage each other through community accountability.</p>
+        <a href="#features" class="cta-button">Learn More</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <h3>Create Groups</h3>
+                <p>Start your own Bible reading group with friends, family, or fellow believers. Share a simple code to invite others.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📅</div>
+                <h3>Daily Tracking</h3>
+                <p>Mark your daily progress and see how your group is doing. Build streaks and celebrate consistency together.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">💬</div>
+                <h3>Group Chat</h3>
+                <p>Discuss insights, ask questions, and encourage each other through built-in group messaging.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🔥</div>
+                <h3>Streak Tracking</h3>
+                <p>Stay motivated with streak counters that track consecutive days of Bible reading across your group.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Simple & Clean</h3>
+                <p>A beautifully designed app focused on what matters most - consistent time in God's word.</p>
+            </div>
+            
+            <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <h3>Accountability</h3>
+                <p>Gentle accountability through community visibility helps everyone stay committed to their reading goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bible Verse Section -->
+    <section class="verse">
+        <p class="verse-text">
+            "So then faith comes by hearing, and hearing by the word of God."
+        </p>
+        <p class="verse-reference">— Romans 10:17</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Thirteen Bible Reading App</p>
+        <p>Built with ❤️ to help believers grow closer to God through His word</p>
+    </footer>
+</body>
+</html>
